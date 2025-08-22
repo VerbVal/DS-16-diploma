@@ -21,6 +21,7 @@
 
 Краткие выводы:
 
+- Выбор моделей охватывает как традиционные алгоритмы машинного обучения (LightGBM и Random Forest), так и современные нейронные сети (LSTM), что является хорошей стратегией для предсказания временных рядов. 
 - Предсказанные моделями значения в разной степени отражают тенденции продаж
 - Лучшую производительность среди примененных показала модель вида LightGBM
 - Лучший результат среди моделей LightGBM  - у модели с дополнительным параметром avg_by_channel_region 
@@ -30,6 +31,6 @@
 Продолжение исследования:
 
 - Изменить глубину прогноза до еженедельных и ежеквартальных продаж.
-- Применить для улучшения точности прогнозирования гибридные модели, которые основаны на взвешенных усредненных предсказаниях разных обученных моделей.
-- Использовать возможности библиотеки Prophet для прогнозирования (Sean J. Taylor, Benjamin Letham "Forecasting at scale" ). !pip install --upgrade fbprophet. https://dzen.ru/a/X9zn_zcTo3uGvQEC?ysclid=me7b50nyf0931026257 https://otexts.com/fpp2/ https://habr.com/ru/companies/ods/articles/323730/ https://pbpython.com/prophet-overview.html https://facebook.github.io/prophet/ https://github.com/facebook/prophet
+- Применить для улучшения точности прогнозирования альтернативные модели, например: стандартную для временных рядов с сезонной компонентой SARIMA, XGBoost, CNN в связке с LSTM, LSTM для извлечения признаков и RF или XGBoosting для финального предсказания, гибридные модели, которые основаны на взвешенных усредненных предсказаниях разных обученных моделей.
+- Использовать возможности библиотеки Prophet для прогнозирования (Sean J. Taylor, Benjamin Letham "Forecasting at scale" ). https://dzen.ru/a/X9zn_zcTo3uGvQEC?ysclid=me7b50nyf0931026257 https://otexts.com/fpp2/ https://habr.com/ru/companies/ods/articles/323730/ https://pbpython.com/prophet-overview.html https://facebook.github.io/prophet/ https://github.com/facebook/prophet
 - Выполнить прескриптивный анализ, используя машинное обучение с подкреплением (RL), для автоматизации процесса принятия решений на основе созданных прогнозов.
